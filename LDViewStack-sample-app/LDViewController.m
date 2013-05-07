@@ -12,6 +12,7 @@
 @interface LDViewController() <LDViewStackDataSource, LDViewStackDelegate>
 
 @property (nonatomic, weak) IBOutlet LDViewStack *viewStack;
+@property (nonatomic, weak) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, copy) NSArray *imageNames;
 
 @end
@@ -40,6 +41,8 @@
     
     self.viewStack.dataSource = self;
     self.viewStack.delegate = self;
+    
+    self.pageControl.numberOfPages = self.imageNames.count;
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,8 +74,8 @@
 
 #pragma mark - LDViewStackDelegate
 
-- (void)viewStack:(LDViewStack *)viewStack didMoveViewToTopOfStack:(UIView *)imageView {
-    
+- (void)viewStack:(LDViewStack *)viewStack didMoveViewToTopOfStack:(UIView *)imageView withIndex:(NSUInteger)index {
+    self.pageControl.currentPage = index;
 }
 
 @end
