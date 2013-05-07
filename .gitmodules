@@ -1,0 +1,3 @@
+[submodule "External/LDViewStack"]
+	path = External/LDViewStack
+	url = git@github-personal:/leedaffen/LDViewStack.git
