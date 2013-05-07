@@ -36,6 +36,7 @@
 		D731BF931739B34C00343B46 /* image_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF871739B34C00343B46 /* image_10.jpg */; };
 		D731BF941739B34C00343B46 /* image_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF881739B34C00343B46 /* image_11.jpg */; };
 		D731BF951739B34C00343B46 /* image_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF891739B34C00343B46 /* image_12.jpg */; };
+		D731BF9A1739B81F00343B46 /* LDViewStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D731BF981739B81F00343B46 /* LDViewStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		D731BF871739B34C00343B46 /* image_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_10.jpg; path = "LDViewStack-sample-app/Resources/image_10.jpg"; sourceTree = "<group>"; };
 		D731BF881739B34C00343B46 /* image_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_11.jpg; path = "LDViewStack-sample-app/Resources/image_11.jpg"; sourceTree = "<group>"; };
 		D731BF891739B34C00343B46 /* image_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_12.jpg; path = "LDViewStack-sample-app/Resources/image_12.jpg"; sourceTree = "<group>"; };
+		D731BF971739B81F00343B46 /* LDViewStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewStack.h; sourceTree = "<group>"; };
+		D731BF981739B81F00343B46 /* LDViewStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,7 @@
 		D731BF5E1739AE4100343B46 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				D731BF961739B81F00343B46 /* LDViewStack */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -213,6 +217,16 @@
 				D731BF891739B34C00343B46 /* image_12.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D731BF961739B81F00343B46 /* LDViewStack */ = {
+			isa = PBXGroup;
+			children = (
+				D731BF971739B81F00343B46 /* LDViewStack.h */,
+				D731BF981739B81F00343B46 /* LDViewStack.m */,
+			);
+			name = LDViewStack;
+			path = External/LDViewStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +356,7 @@
 				D731BF2D1739ADE200343B46 /* main.m in Sources */,
 				D731BF311739ADE200343B46 /* LDAppDelegate.m in Sources */,
 				D731BF401739ADE200343B46 /* LDViewController.m in Sources */,
+				D731BF9A1739B81F00343B46 /* LDViewStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
