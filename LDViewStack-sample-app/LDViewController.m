@@ -61,12 +61,9 @@
 - (UIView *)viewStack:(LDViewStack *)viewStack viewAtIndex:(NSInteger)index {
     UIImage *image = [UIImage imageNamed:self.imageNames[index]];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-    CGSize newImageSize = CGSizeMake(image.size.width/3, image.size.height/3);
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     
-    imageView.frame = CGRectMake((viewStack.bounds.size.width/2) - (newImageSize.width/2),
-                                 (viewStack.bounds.size.height/2) - (newImageSize.height/2),
-                                 newImageSize.width,
-                                 newImageSize.height);
+    imageView.frame = viewStack.bounds;
     
     return imageView;
 }
