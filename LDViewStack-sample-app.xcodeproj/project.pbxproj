@@ -37,6 +37,7 @@
 		D731BF941739B34C00343B46 /* image_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF881739B34C00343B46 /* image_11.jpg */; };
 		D731BF951739B34C00343B46 /* image_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF891739B34C00343B46 /* image_12.jpg */; };
 		D731BF9A1739B81F00343B46 /* LDViewStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D731BF981739B81F00343B46 /* LDViewStack.m */; };
+		D7DEA8DE173C52820001FCC0 /* LDViewStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DEA8DD173C52820001FCC0 /* LDViewStackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		D731BF891739B34C00343B46 /* image_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_12.jpg; path = "LDViewStack-sample-app/Resources/image_12.jpg"; sourceTree = "<group>"; };
 		D731BF971739B81F00343B46 /* LDViewStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewStack.h; sourceTree = "<group>"; };
 		D731BF981739B81F00343B46 /* LDViewStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewStack.m; sourceTree = "<group>"; };
+		D7DEA8DC173C52820001FCC0 /* LDViewStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewStackView.h; sourceTree = "<group>"; };
+		D7DEA8DD173C52820001FCC0 /* LDViewStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewStackView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,8 @@
 		D731BF961739B81F00343B46 /* LDViewStack */ = {
 			isa = PBXGroup;
 			children = (
+				D7DEA8DC173C52820001FCC0 /* LDViewStackView.h */,
+				D7DEA8DD173C52820001FCC0 /* LDViewStackView.m */,
 				D731BF971739B81F00343B46 /* LDViewStack.h */,
 				D731BF981739B81F00343B46 /* LDViewStack.m */,
 			);
@@ -357,6 +362,7 @@
 				D731BF311739ADE200343B46 /* LDAppDelegate.m in Sources */,
 				D731BF401739ADE200343B46 /* LDViewController.m in Sources */,
 				D731BF9A1739B81F00343B46 /* LDViewStack.m in Sources */,
+				D7DEA8DE173C52820001FCC0 /* LDViewStackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
