@@ -8,21 +8,23 @@
 
 #import "LDViewController.h"
 #import "LDViewStack.h"
+#import "UIImage+Resize.h"
+
 
 @interface LDViewController() <LDViewStackDataSource, LDViewStackDelegate>
 
 @property (nonatomic, weak) IBOutlet LDViewStack *viewStack;
 @property (nonatomic, weak) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, copy) NSArray *imageNames;
+@property (nonatomic, strong) NSMutableArray *imageViews;
 
 @end
 
+
 @implementation LDViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     self.imageNames = @[
                         @"image_1.jpg",
@@ -39,16 +41,22 @@
                         @"image_12.jpg"
                         ];
     
+    self.imageViews = [NSMutableArray arrayWithCapacity:self.imageNames.count];
+    
+    for (NSString *name in self.imageNames) {
+        UIImage *resizedImage = [[UIImage imageNamed:name] resizedImage:self.viewStack.bounds.size interpolationQuality:kCGInterpolationHigh];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:resizedImage];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        
+        [self.imageViews addObject:imageView];
+    }
+    
     self.viewStack.dataSource = self;
     self.viewStack.delegate = self;
+    self.viewStack.maxVisibleItems = 5;
+    self.viewStack.shuffleAnimationDuration = 0.25;
     
     self.pageControl.numberOfPages = self.imageNames.count;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -59,10 +67,10 @@
 }
 
 - (UIView *)viewStack:(LDViewStack *)viewStack viewAtIndex:(NSInteger)index {
-    UIImage *image = [UIImage imageNamed:self.imageNames[index]];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    if (index >= self.imageViews.count) return [self.imageViews lastObject];
+    if (index < 0) return [self.imageViews firstObject];
     
+    UIImageView *imageView = self.imageViews[index];
     imageView.frame = viewStack.bounds;
     
     return imageView;
@@ -71,8 +79,8 @@
 
 #pragma mark - LDViewStackDelegate
 
-- (void)viewStack:(LDViewStack *)viewStack didMoveViewToTopOfStack:(UIView *)imageView withIndex:(NSUInteger)index {
-    self.pageControl.currentPage = index;
+- (void)viewStack:(LDViewStack *)viewStack didMoveViewToTopOfStack:(UIView *)imageView {
+    self.pageControl.currentPage = [self.imageViews indexOfObject:imageView];
 }
 
 @end

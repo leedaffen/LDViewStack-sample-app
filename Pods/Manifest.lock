@@ -1,0 +1,10 @@
+PODS:
+  - LDViewStack (0.1.0)
+
+DEPENDENCIES:
+  - LDViewStack (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  LDViewStack: c2edcf4a42bd83a8a2f8a5a1926909d1ad213b2e
+
+COCOAPODS: 0.29.0

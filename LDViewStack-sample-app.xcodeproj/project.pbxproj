@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CDBAD2218CFCC5100860B52 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAD1D18CFCC5100860B52 /* UIImage+Alpha.m */; };
+		7CDBAD2318CFCC5100860B52 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAD1F18CFCC5100860B52 /* UIImage+Resize.m */; };
+		7CDBAD2418CFCC5100860B52 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAD2118CFCC5100860B52 /* UIImage+RoundedCorner.m */; };
+		C01670FD115E49A6ACDB8387 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE2463173124040BD9401E8 /* libPods.a */; };
 		D731BF211739ADE200343B46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D731BF201739ADE100343B46 /* UIKit.framework */; };
 		D731BF231739ADE200343B46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D731BF221739ADE200343B46 /* Foundation.framework */; };
 		D731BF251739ADE200343B46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D731BF241739ADE200343B46 /* CoreGraphics.framework */; };
@@ -36,8 +40,6 @@
 		D731BF931739B34C00343B46 /* image_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF871739B34C00343B46 /* image_10.jpg */; };
 		D731BF941739B34C00343B46 /* image_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF881739B34C00343B46 /* image_11.jpg */; };
 		D731BF951739B34C00343B46 /* image_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D731BF891739B34C00343B46 /* image_12.jpg */; };
-		D731BF9A1739B81F00343B46 /* LDViewStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D731BF981739B81F00343B46 /* LDViewStack.m */; };
-		D7DEA8DE173C52820001FCC0 /* LDViewStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DEA8DD173C52820001FCC0 /* LDViewStackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7CDBAD1C18CFCC5100860B52 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		7CDBAD1D18CFCC5100860B52 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		7CDBAD1E18CFCC5100860B52 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		7CDBAD1F18CFCC5100860B52 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		7CDBAD2018CFCC5100860B52 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		7CDBAD2118CFCC5100860B52 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		91FEC8DA689E4CB5804C8D0D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D731BF1D1739ADE100343B46 /* LDViewStack-sample-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LDViewStack-sample-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D731BF201739ADE100343B46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D731BF221739ADE200343B46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,10 +95,7 @@
 		D731BF871739B34C00343B46 /* image_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_10.jpg; path = "LDViewStack-sample-app/Resources/image_10.jpg"; sourceTree = "<group>"; };
 		D731BF881739B34C00343B46 /* image_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_11.jpg; path = "LDViewStack-sample-app/Resources/image_11.jpg"; sourceTree = "<group>"; };
 		D731BF891739B34C00343B46 /* image_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_12.jpg; path = "LDViewStack-sample-app/Resources/image_12.jpg"; sourceTree = "<group>"; };
-		D731BF971739B81F00343B46 /* LDViewStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewStack.h; sourceTree = "<group>"; };
-		D731BF981739B81F00343B46 /* LDViewStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewStack.m; sourceTree = "<group>"; };
-		D7DEA8DC173C52820001FCC0 /* LDViewStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewStackView.h; sourceTree = "<group>"; };
-		D7DEA8DD173C52820001FCC0 /* LDViewStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewStackView.m; sourceTree = "<group>"; };
+		EFE2463173124040BD9401E8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 				D731BF211739ADE200343B46 /* UIKit.framework in Frameworks */,
 				D731BF231739ADE200343B46 /* Foundation.framework in Frameworks */,
 				D731BF251739ADE200343B46 /* CoreGraphics.framework in Frameworks */,
+				C01670FD115E49A6ACDB8387 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,15 +123,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CDBAD1A18CFCC5100860B52 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAD1B18CFCC5100860B52 /* UIImage-categories */,
+			);
+			name = Libraries;
+			path = "LDViewStack-sample-app/Libraries";
+			sourceTree = "<group>";
+		};
+		7CDBAD1B18CFCC5100860B52 /* UIImage-categories */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAD1C18CFCC5100860B52 /* UIImage+Alpha.h */,
+				7CDBAD1D18CFCC5100860B52 /* UIImage+Alpha.m */,
+				7CDBAD1E18CFCC5100860B52 /* UIImage+Resize.h */,
+				7CDBAD1F18CFCC5100860B52 /* UIImage+Resize.m */,
+				7CDBAD2018CFCC5100860B52 /* UIImage+RoundedCorner.h */,
+				7CDBAD2118CFCC5100860B52 /* UIImage+RoundedCorner.m */,
+			);
+			path = "UIImage-categories";
+			sourceTree = "<group>";
+		};
 		D731BF141739ADE100343B46 = {
 			isa = PBXGroup;
 			children = (
-				D731BF5E1739AE4100343B46 /* External */,
+				7CDBAD1A18CFCC5100860B52 /* Libraries */,
 				D731BF651739AF8400343B46 /* Resources */,
 				D731BF261739ADE200343B46 /* LDViewStack-sample-app */,
 				D731BF4D1739ADE200343B46 /* LDViewStack-sample-appTests */,
 				D731BF1F1739ADE100343B46 /* Frameworks */,
 				D731BF1E1739ADE100343B46 /* Products */,
+				91FEC8DA689E4CB5804C8D0D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +174,7 @@
 				D731BF221739ADE200343B46 /* Foundation.framework */,
 				D731BF241739ADE200343B46 /* CoreGraphics.framework */,
 				D731BF471739ADE200343B46 /* SenTestingKit.framework */,
+				EFE2463173124040BD9401E8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,14 +226,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D731BF5E1739AE4100343B46 /* External */ = {
-			isa = PBXGroup;
-			children = (
-				D731BF961739B81F00343B46 /* LDViewStack */,
-			);
-			name = External;
-			sourceTree = "<group>";
-		};
 		D731BF651739AF8400343B46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,18 +245,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		D731BF961739B81F00343B46 /* LDViewStack */ = {
-			isa = PBXGroup;
-			children = (
-				D7DEA8DC173C52820001FCC0 /* LDViewStackView.h */,
-				D7DEA8DD173C52820001FCC0 /* LDViewStackView.m */,
-				D731BF971739B81F00343B46 /* LDViewStack.h */,
-				D731BF981739B81F00343B46 /* LDViewStack.m */,
-			);
-			name = LDViewStack;
-			path = External/LDViewStack;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D731BF581739ADE200343B46 /* Build configuration list for PBXNativeTarget "LDViewStack-sample-app" */;
 			buildPhases = (
+				D1340702C79D45109BB2E02A /* Check Pods Manifest.lock */,
 				D731BF191739ADE100343B46 /* Sources */,
 				D731BF1A1739ADE100343B46 /* Frameworks */,
 				D731BF1B1739ADE100343B46 /* Resources */,
+				598453C103EE460898D7687E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +351,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		598453C103EE460898D7687E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1340702C79D45109BB2E02A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D731BF441739ADE200343B46 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,11 +401,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDBAD2218CFCC5100860B52 /* UIImage+Alpha.m in Sources */,
 				D731BF2D1739ADE200343B46 /* main.m in Sources */,
 				D731BF311739ADE200343B46 /* LDAppDelegate.m in Sources */,
 				D731BF401739ADE200343B46 /* LDViewController.m in Sources */,
-				D731BF9A1739B81F00343B46 /* LDViewStack.m in Sources */,
-				D7DEA8DE173C52820001FCC0 /* LDViewStackView.m in Sources */,
+				7CDBAD2418CFCC5100860B52 /* UIImage+RoundedCorner.m in Sources */,
+				7CDBAD2318CFCC5100860B52 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +524,12 @@
 		};
 		D731BF591739ADE200343B46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FEC8DA689E4CB5804C8D0D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDViewStack-sample-app/LDViewStack-sample-app-Prefix.pch";
 				INFOPLIST_FILE = "LDViewStack-sample-app/LDViewStack-sample-app-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -492,11 +537,12 @@
 		};
 		D731BF5A1739ADE200343B46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FEC8DA689E4CB5804C8D0D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDViewStack-sample-app/LDViewStack-sample-app-Prefix.pch";
 				INFOPLIST_FILE = "LDViewStack-sample-app/LDViewStack-sample-app-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
